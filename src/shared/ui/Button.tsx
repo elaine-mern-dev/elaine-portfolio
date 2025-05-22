@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ text, onClick, className }) => {
   return (
     <button
       onClick={onClick}
-      className={`bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 ${className}`}
+      className={`bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300 ${className}`}
     >
       <span className="flex items-center gap-2">
         {text} <GoArrowUpRight />

@@ -3,24 +3,14 @@ import AboutMeCTA from "../../components/AboutMeCTA";
 const About: React.FC = () => {
   return (
     // Section container with top border and spacing
-    <section className="border-t-2 border-white mt-16 pt-8 flex items-center justify-between">
+    <section className="border-t-2 border-white mt-16 pt-8 flex items-center justify-between gap-4">
       {/* Left section: video icon and label */}
       <div className="w-1/2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-16 w-16 text-white opacity-80"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M14.752 11.168l-6.518-3.692A1 1 0 007 8.309v7.382a1 1 0 001.234.97l6.518-1.476A1 1 0 0016 14.309V9.691a1 1 0 00-1.248-.523z"
-          />
-        </svg>
-        <span className="text-white mt-2 block">Video</span>
+     
+        <video className="w-full h-full"  controls>
+          <source src="/videos/self-introductory.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Right section: About content */}

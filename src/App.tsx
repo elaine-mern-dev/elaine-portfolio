@@ -1,6 +1,7 @@
 // src/App.tsx
 import About from "./features/About/About";
 import Hero from "./features/Hero/Hero";
+import Skills from "./features/Skills/Skills";
 import Header from "./shared/layout/Header";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Skills />
     </div>
   );
 }

@@ -1,9 +1,7 @@
-import About from "../features/About/About";
-import Hero from "../features/Hero/Hero";
-import Projects from "../features/Projects/Projects";
-import Skills from "../features/Skills/Skills";
-import Footer from "../shared/layout/Footer";
-import Header from "../shared/layout/Header";
+
+import {  Hero, About, Skills, Projects } from "../features";
+import { Header, Footer } from "../shared/layout";
+
 
 const Home = () => {    
     return (

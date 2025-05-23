@@ -16,7 +16,7 @@ const About: React.FC = () => {
       {/* Right section: About content */}
       <div className="w-1/2 text-white">
         {/* Section label */}
-        <p className="mb-4 py-2 px-4 w-28 border border-orange-500 rounded-full text-center font-bold">
+        <p className="mb-4 py-2 px-4 w-36 border border-orange-500 rounded-full text-center font-bold">
           About Me
         </p>
 

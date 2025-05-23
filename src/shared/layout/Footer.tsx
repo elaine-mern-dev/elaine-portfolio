@@ -1,7 +1,7 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { navItems } from "../../constants/navigation";
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <footer className="mt-16 flex justify-evenly p-6  text-gray-700">
       <div className="flex flex-col max-w-xs">

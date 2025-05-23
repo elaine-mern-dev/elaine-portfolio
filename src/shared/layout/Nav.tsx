@@ -1,10 +1,8 @@
-// src/components/Nav.tsx
-
-import React from "react";
+// src/shared/layout/Nav.tsx
 import { navItems } from "../../constants/navigation";
 
 
-const Nav: React.FC = () => {
+const Nav:React.FC= () => {
   return (
     <nav className="flex justify-center space-x-4">
       {navItems.map((item) => (

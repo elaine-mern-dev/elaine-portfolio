@@ -1,16 +1,11 @@
 // src/App.tsx
-import About from "./features/About/About";
-import Hero from "./features/Hero/Hero";
-import Skills from "./features/Skills/Skills";
-import Header from "./shared/layout/Header";
+
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="m-16  text-white h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
+      <Home />
     </div>
   );
 }

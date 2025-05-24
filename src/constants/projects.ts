@@ -28,7 +28,8 @@ export const projects: Project[] = [
     description:
       "A MERN stack platform aimed at transforming agricultural operations and connecting farmers with smart analytics.",
     demo: "https://www.youtube.com/watch?v=8JM5nqSkUbg",
-    route: "/projects/agrinext",
+    route:
+      "https://www.canva.com/design/DAGlpIHLoeg/rrDYcP0ebZ8OgGc2qqshXA/edit",
     status: "coming-soon",
     role: "Full Stack Developer",
   },

@@ -1,5 +1,5 @@
 //src/pages/Home.tsx
-import {  Hero, About, Skills } from "../features";
+import {  Hero, About, Skills, Projects } from "../features";
 import { Header, Footer } from "../shared/layout";
 
 
@@ -10,6 +10,7 @@ const Home = () => {
         <Hero />
         <About />
         <Skills />
+        <Projects />
         <Footer />
       </div>
     );

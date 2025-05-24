@@ -1,0 +1,45 @@
+//src/constants/projects.ts
+export interface Project {
+  title: string;
+  description: string;
+  github?: string;
+  demo?: string;
+  route?: string;
+  techStack?: string[];
+  status?: "live" | "coming-soon";
+  role?: string;
+}
+
+export const projects: Project[] = [
+  {
+    title: "Edusynx - School Management System",
+    description:
+      "A MERN stack application that modernizes school operations by automating tasks like enrollment, attendance, and performance tracking.",
+    github:
+      "https://github.com/elamuhombe/gomycode-mern-edusynx-school-management-system.git",
+    demo: "https://edusynx.elainees.dev/",
+    route: "/projects/edusynx",
+    techStack: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
+    status: "live",
+    role: "Full-Stack Developer",
+  },
+  {
+    title: "AgriNext",
+    description:
+      "A MERN stack platform aimed at transforming agricultural operations and connecting farmers with smart analytics.",
+    demo: "https://www.youtube.com/watch?v=8JM5nqSkUbg",
+    route: "/projects/agrinext",
+    status: "coming-soon",
+    role: "Full Stack Developer",
+  },
+  {
+    title: "MerExpress - E-commerce",
+    description:
+      "A MERN stack application providing a robust e-commerce platform with user authentication, product management, and cart functionality.",
+    github: "https://github.com/Kyalo460/Merxpress_Frontend.git",
+    demo: "https://merexpress.elainees.dev/",
+    route: "/projects/merexpress",
+    techStack: ["NextJS", "Tailwind CSS"],
+    role: "Front-End Developer",
+  },
+];

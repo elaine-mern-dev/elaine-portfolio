@@ -1,4 +1,4 @@
-//src/constants/projects.ts
+// src/constants/projects.ts
 export interface Project {
   title: string;
   description: string;
@@ -8,6 +8,7 @@ export interface Project {
   techStack?: string[];
   status?: "live" | "coming-soon";
   role?: string;
+  image?: string; 
 }
 
 export const projects: Project[] = [
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     techStack: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
     status: "live",
     role: "Full-Stack Developer",
+    image: "/images/edusynx.png", 
   },
   {
     title: "AgriNext Africa - Agricultural Platform",
@@ -32,6 +34,7 @@ export const projects: Project[] = [
       "https://www.canva.com/design/DAGlpIHLoeg/rrDYcP0ebZ8OgGc2qqshXA/edit",
     status: "coming-soon",
     role: "Full Stack Developer",
+    image: "",
   },
   {
     title: "MerExpress - E-commerce",
@@ -42,5 +45,19 @@ export const projects: Project[] = [
     route: "/projects/merexpress",
     techStack: ["NextJS", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
     role: "Front-End Developer",
+    image:
+      "/images/merxpress.png", //
+  },
+  {
+    title: "Elaine - Portfolio Website",
+    description:
+      "A MERN stack application that modernizes school operations by automating tasks like enrollment, attendance, and performance tracking.",
+    github: "https://github.com/elaine-mern-dev/elaine-portfolio.git",
+    demo: "https://edusynx.elainees.dev/",
+    route: "/projects/edusynx",
+    techStack: ["React", "TypeScript", "Node.js", "Tailwind CSS"],
+    status: "live",
+    role: "Front End Developer",
+    image: "/images/portfolio.png",
   },
 ];

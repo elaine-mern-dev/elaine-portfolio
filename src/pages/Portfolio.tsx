@@ -1,4 +1,4 @@
-//src/pages/Portfolio.tsx
+// src/pages/Portfolio.tsx
 import React from "react";
 import { projects } from "../constants/projects";
 import { Nav } from "../shared/layout";
@@ -95,12 +95,14 @@ const Portfolio: React.FC = () => {
                     </a>
                   )}
                   {route && (
-                    <Link
-                      to={route}
+                    <a
+                      href={route}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-orange-600 hover:underline"
                     >
                       More details
-                    </Link>
+                    </a>
                   )}
                 </div>
               )}
@@ -110,5 +112,6 @@ const Portfolio: React.FC = () => {
       </div>
     </div>
   );
-}
+};
+
 export default Portfolio;

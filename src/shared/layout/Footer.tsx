@@ -1,11 +1,12 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { navItems } from "../../constants/navigation";
+import SocialMedia from "../social-media-icons/SocialMedia";
 
 const Footer:React.FC = () => {
   return (
     <footer className="mt-16 flex justify-evenly p-6  text-gray-700">
       <div className="flex flex-col max-w-xs">
-        <p className="mb-4 text-orange-700 text-4xl">
+        <p className="mb-4  text-orange-700 text-4xl">
           <span className="bg-orange-700 text-2xl text-white p-4 mr-2  rounded-full">
             EM
           </span>
@@ -13,13 +14,12 @@ const Footer:React.FC = () => {
         </p>
 
         <p className="text-sm mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          &copy; 2025 Elaine Muhombe. All rights reserved.
         </p>
       </div>
       {/* Navigation Links */}
       <div className="flex flex-col mb-4">
-        <h3 className="font-semibold mb-2">Navigation</h3>
+        <h2 className="font-semibold mb-2">Navigation</h2>
         <ul className="space-y-2">
           {navItems.map(({ name, href }) => (
             <li
@@ -35,7 +35,8 @@ const Footer:React.FC = () => {
         </ul>
       </div>
       <div className="flex flex-col">
-        {/* Placeholder for contact info or copyright */}
+        {/* Connect with Me */}
+        <SocialMedia />
       </div>
     </footer>
   );

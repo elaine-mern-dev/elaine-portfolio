@@ -38,9 +38,9 @@ export const projects: Project[] = [
     description:
       "A MERN stack application providing a robust e-commerce platform with user authentication, product management, and cart functionality.",
     github: "https://github.com/Kyalo460/Merxpress_Frontend.git",
-    demo: "https://merexpress.elainees.dev/",
+    demo: "https://drive.google.com/file/d/1v8kkQiY4aN57Mrrme4YUSDWqinno0Xpf/view?usp=sharing",
     route: "/projects/merexpress",
-    techStack: ["NextJS", "Tailwind CSS"],
+    techStack: ["NextJS", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
     role: "Front-End Developer",
   },
 ];

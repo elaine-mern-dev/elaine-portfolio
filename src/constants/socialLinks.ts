@@ -1,6 +1,7 @@
 // src/constants/socialLinks.ts
 import type { IconType } from "react-icons";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from "react-icons/fa";
+
 
 export interface SocialLink {
   href: string;
@@ -10,18 +11,24 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   {
-    href: "https://linkedin.com/in/yourprofile",
+    href: "https://www.linkedin.com/in/elaine-muhombe/",
     icon: FaLinkedin,
     label: "LinkedIn",
   },
   {
-    href: "https://github.com/yourprofile",
+    href: "https://github.com/elaine-mern-dev",
     icon: FaGithub,
     label: "GitHub",
   },
   {
-    href: "https://twitter.com/yourprofile",
+    href: "https://x.com/emuhombe",
     icon: FaTwitter,
     label: "Twitter",
   },
+  {
+    href: "https://wa.me/+254701217788",
+    icon: FaWhatsapp,
+    label: "WhatsApp",
+  },
 ];
+

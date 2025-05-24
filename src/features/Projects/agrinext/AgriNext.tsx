@@ -14,7 +14,15 @@ const AgriNext:React.FC=()=> {
         <p className="text-gray-700 mb-4">
             With features like crop management, weather forecasting, and market analysis, Agrisol empowers farmers to optimize their yield and profitability.
         </p>
-        <Button text="View Project" />
+        <Button 
+        text="View Project" 
+        onClick={() =>
+    window.open(
+      "https://www.canva.com/design/DAGlpIHLoeg/rrDYcP0ebZ8OgGc2qqshXA/edit?utm_content=DAGlpIHLoeg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "_blank"
+    )
+  }
+  />
         </div>
     );
 }

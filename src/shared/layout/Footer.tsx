@@ -1,3 +1,4 @@
+//src/shared/layout/Footer.tsx
 import { IoIosArrowForward } from "react-icons/io";
 import { navItems } from "../../constants/navigation";
 import SocialMedia from "../social-media-icons/SocialMedia";

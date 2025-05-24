@@ -24,7 +24,7 @@ export const projects: Project[] = [
     role: "Full-Stack Developer",
   },
   {
-    title: "AgriNext",
+    title: "AgriNext Africa - Agricultural Platform",
     description:
       "A MERN stack platform aimed at transforming agricultural operations and connecting farmers with smart analytics.",
     demo: "https://www.youtube.com/watch?v=8JM5nqSkUbg",

@@ -1,8 +1,15 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+/* Make the html, body, and root div take full height */
 html,
 body,
 #root {
   height: 100%;
-  background-color: #0f172a; 
+  background-color: #0f172a; /* Tailwind’s slate-900 dark blue */
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }

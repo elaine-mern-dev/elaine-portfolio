@@ -23,13 +23,13 @@ const Footer: React.FC = () => {
       <div className="flex flex-col items-center md:items-start">
         <h2 className="font-semibold mb-2">Navigation</h2>
         <ul className="space-y-2 text-sm">
-          {navItems.map(({ name, href }) => (
+          {navItems.map(({ name, path }) => (
             <li
               key={name}
               className="flex items-center gap-2 hover:text-orange-500"
             >
               <IoIosArrowForward className="text-orange-600" />
-              <a href={href} className="cursor-pointer">
+              <a href={path} className="cursor-pointer">
                 {name}
               </a>
             </li>

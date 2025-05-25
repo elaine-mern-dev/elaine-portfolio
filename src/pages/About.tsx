@@ -1,9 +1,9 @@
+// src/pages/About.tsx
 import { Nav } from "../shared/layout";
 
-// src/pages/About.tsx
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-4 max-w-3xl mx-auto">
+    <div className="md:flex flex-col items-center justify-center px-4 max-w-3xl mx-auto">
       <Nav />
       <h1 className="text-4xl font-bold my-6">About Me</h1>
 

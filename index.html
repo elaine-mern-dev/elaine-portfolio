@@ -7,24 +7,12 @@
 
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="/src/index.css" rel="stylesheet">
 
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind config to use Poppins as default font -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-            },
-          },
-        },
-      };
-    </script>
+    
+   
   </head>
-  <body class="font-sans bg-white text-gray-900">
+  <body class="font-sans text-gray-900 bg-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

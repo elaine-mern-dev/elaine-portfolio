@@ -1,5 +1,6 @@
 // src/shared/layout/Nav.tsx
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { navItems } from "../../constants/navigation";
 import { FiMenu, FiX } from "react-icons/fi"; // Feather icons menu and close
 
@@ -20,13 +21,13 @@ const Nav: React.FC = () => {
       {/* Horizontal nav - visible on medium+ screens */}
       <nav className="hidden md:flex justify-center space-x-4">
         {navItems.map((item) => (
-          <a
+          <Link
             key={item.name}
-            href={item.href}
+            to={item.path}
             className="text-gray-700 hover:text-orange-500 font-semibold"
           >
             {item.name}
-          </a>
+          </Link>
         ))}
       </nav>
 
@@ -34,18 +35,18 @@ const Nav: React.FC = () => {
       {isOpen && (
         <div className="absolute top-full left-0 mt-2 w-40 bg-white rounded-lg shadow-lg flex flex-col z-50 md:hidden">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
+              to={item.path}
               className="block px-4 py-2 text-gray-700 hover:bg-orange-100 hover:text-orange-500 font-semibold"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       )}
-</div>
+    </div>
   );
 };
 

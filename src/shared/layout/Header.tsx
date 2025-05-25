@@ -1,3 +1,4 @@
+//src/shared/layout/Header.tsx
 import Button from "../ui/Button";
 import Nav from "./Nav";
 
@@ -12,7 +13,12 @@ const Header:React.FC = () => {
       </h1>
 
       <Nav />
-      <Button text={"Let's Talk"} />
+      <Button
+        text={"Let's Talk"}
+        onClick={() =>
+          window.open("https://www.linkedin.com/", "_blank")
+        }
+      />
     </header>
   );
 }   

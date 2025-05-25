@@ -51,10 +51,9 @@ export const projects: Project[] = [
   {
     title: "Elaine - Portfolio Website",
     description:
-      "A MERN stack application that modernizes school operations by automating tasks like enrollment, attendance, and performance tracking.",
+      "A personal portfolio website built with React and TypeScript to showcase my skills, projects, and experience as a full-stack web developer. It features interactive sections for project highlights, a contact details, and a responsive design for optimal viewing on all devices.",
     github: "https://github.com/elaine-mern-dev/elaine-portfolio.git",
     demo: "https://edusynx.elainees.dev/",
-    route: "/projects/edusynx",
     techStack: ["React", "TypeScript", "Node.js", "Tailwind CSS"],
     status: "live",
     role: "Front End Developer",

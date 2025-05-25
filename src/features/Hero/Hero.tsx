@@ -1,7 +1,9 @@
-import React from "react";
+//src/features/Hero/Hero.tsx
 import Button from "../../shared/ui/Button";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="flex items-center justify-between p-4">
       <div className="-mt-28 w-1/2">
@@ -19,8 +21,15 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="mt-8 flex gap-4">
-          <Button text="Portfolio" />
-          <button className=" inline-block px-4 py-2 text-white font-bold hover:bg-orange-500 transition-colors duration-300 rounded-full">
+          <Button text="Portfolio" onClick={() => navigate("/portfolio")} />
+          <button
+            className="inline-block px-4 py-2 text-white font-bold hover:bg-orange-500 transition-colors duration-300 rounded-full"
+            onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/?view=cm&to=emuhombe@gmail.com"
+              )
+            }
+          >
             Hire Me
           </button>
         </div>

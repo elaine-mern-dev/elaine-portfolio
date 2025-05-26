@@ -5,7 +5,7 @@ import SocialMedia from "../social-media-icons/SocialMedia";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-16 flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-0 p-6 text-gray-700 bg-slate-100">
+    <footer className="w-full mt-16 flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-0 p-6 text-gray-700 bg-slate-100">
       {/* Logo & Info */}
       <div className="flex flex-col items-center md:items-start max-w-xs text-center md:text-left">
         <p className="mb-4 text-orange-700 text-3xl md:text-4xl flex items-center">

@@ -9,7 +9,10 @@ const Home = () => {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      {/* Hide on screens smaller than 600px (sm = 640px in Tailwind) */}
+      <div className="hidden sm:block">
+        <Projects />
+      </div>
       <Footer />
     </div>
   );

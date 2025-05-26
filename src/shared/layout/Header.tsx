@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-transparent md:bg-white p-4 rounded-full flex flex-wrap md:flex-nowrap items-center justify-between gap-4 md:gap-6 md:mb-6">
+    <header className="bg-transparent mt-4 md:bg-white p-4 rounded-full flex flex-wrap md:flex-nowrap items-center justify-between gap-4 md:gap-6 md:mb-6">
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-orange-500 flex items-center">
         <span className="bg-orange-500 text-base sm:text-lg md:text-xl text-white p-2 sm:p-3 md:p-4 mr-2 rounded-full">
           EM

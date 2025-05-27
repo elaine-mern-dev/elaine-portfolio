@@ -1,13 +1,11 @@
 // src/features/Projects/Projects.tsx
-
 import { projects } from "../../constants/projects";
+import Badge from "../../shared/ui/Badge";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-10">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center">
-        My Projects
-      </h1>
+    <div className="-mt-8 flex flex-col items-center justify-center min-h-screen px-4 py-10">
+      <Badge text="Projects" />
       <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8 text-center">
         Explore my projects and contributions.
       </p>

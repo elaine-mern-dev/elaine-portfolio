@@ -14,7 +14,7 @@ const AboutMeCTA = () => {
   };
 
   return (
-    <div className="flex flex-col items-center sm:flex-row gap-4 mt-4">
+    <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-4">
       <Button
         text={"Contact Me"}
         className="bg-orange-500 text-white hover:bg-orange-600 transition duration-300 w-36 sm:w-auto"
@@ -22,8 +22,10 @@ const AboutMeCTA = () => {
       />
 
       <button
-        className="border border-orange-500 rounded-full py-3 px-4 flex items-center justify-center text-sm sm:text-base lg:text-lg gap-2 w-full sm:w-auto text-white"
-        onClick={handleResumeDownload}
+        className="border border-primary rounded-full py-3 px-4 flex items-center justify-center
+  text-sm sm:text-base lg:text-lg gap-2 w-full sm:w-auto
+  text-navy hover:text-slateblue hover:border-slateblue transition duration-300"
+        onClick={() => handleResumeDownload()}
       >
         Download my resume{" "}
         <span>

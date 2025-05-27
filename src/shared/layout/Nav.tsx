@@ -24,7 +24,7 @@ const Nav: React.FC = () => {
           <Link
             key={item.name}
             to={item.path}
-            className="text-gray-700 hover:text-orange-500 font-semibold"
+            className="text-gray-700 hover:text-tealAccent font-semibold"
           >
             {item.name}
           </Link>
@@ -38,7 +38,7 @@ const Nav: React.FC = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="block px-4 py-2 text-gray-700 hover:bg-orange-100 hover:text-orange-500 font-semibold"
+              className="block px-4 py-2 text-gray-700 hover:bg-orange-100 hover:text-tealAccent font-semibold"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

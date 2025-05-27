@@ -24,13 +24,15 @@ const Portfolio: React.FC = () => {
             }) => (
               <div
                 key={title}
-                className="border rounded-lg p-6 shadow hover:shadow-lg transition-shadow duration-300 relative"
+                className="border rounded-lg p-6 shadow-md bg-customBlueGray transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-customBlueGrayLight"
               >
-                <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-slateblue">
+                  {title}
+                </h3>
                 {role && (
-                  <p className="text-sm text-gray-600 italic mb-2">{role}</p>
+                  <p className="text-sm text-slateblue italic mb-2">{role}</p>
                 )}
-                <p className="text-gray-700 mb-4">{description}</p>
+                <p className="text-slateblue mb-4">{description}</p>
 
                 {/* Tech Stack */}
                 {techStack && techStack.length > 0 && (
@@ -38,7 +40,7 @@ const Portfolio: React.FC = () => {
                     {techStack.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-orange-100 text-orange-600 text-sm px-3 py-1 rounded-full"
+                        className="bg-secondary text-navy text-sm px-3 py-1 rounded-full"
                       >
                         {tech}
                       </span>
@@ -48,13 +50,13 @@ const Portfolio: React.FC = () => {
 
                 {/* Links */}
                 {status !== "coming-soon" && (
-                  <div className="flex flex-wrap space-x-4">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {github && (
                       <a
                         href={github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline"
+                        className="text-navy hover:underline"
                       >
                         GitHub
                       </a>
@@ -64,7 +66,7 @@ const Portfolio: React.FC = () => {
                         href={demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-green-600 hover:underline"
+                        className="bg-slateblue text-secondary px-2 py-1 rounded hover:underline"
                       >
                         Demo
                       </a>
@@ -72,7 +74,7 @@ const Portfolio: React.FC = () => {
                     {route && (
                       <Link
                         to={route}
-                        className="text-orange-600 hover:underline"
+                        className="bg-navy text-secondary px-2 py-1 rounded hover:underline"
                       >
                         More details
                       </Link>
@@ -81,8 +83,8 @@ const Portfolio: React.FC = () => {
                 )}
 
                 {status === "coming-soon" && (
-                  <div className="flex flex-wrap space-x-4">
-                    <span className="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded-full">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-secondary text-navy text-xs font-semibold px-2 py-1 rounded-full">
                       Coming Soon
                     </span>
                     {demo && (
@@ -90,7 +92,7 @@ const Portfolio: React.FC = () => {
                         href={demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-green-600 hover:underline"
+                        className="bg-slateblue text-secondary px-2 py-1 rounded hover:underline"
                       >
                         Demo
                       </a>
@@ -100,7 +102,7 @@ const Portfolio: React.FC = () => {
                         href={route}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-orange-600 hover:underline"
+                        className="bg-navy text-secondary px-2 py-1 rounded hover:underline"
                       >
                         More details
                       </a>

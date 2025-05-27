@@ -4,7 +4,9 @@ import { socialLinks } from "../../constants/socialLinks";
 const SocialMedia = () => {
   return (
     <div className="flex flex-col items-start space-y-4">
-      <h2 className="text-lg font-semibold">Connect with Me</h2>
+      <h2 className="text-lg text-customBlueGray font-semibold">
+        Connect with Me
+      </h2>
       <div className="flex space-x-4 text-2xl">
         {socialLinks.map(({ href, icon: Icon, label }) => (
           <a
@@ -14,7 +16,7 @@ const SocialMedia = () => {
             rel="noopener noreferrer"
             aria-label={label}
           >
-            <Icon className="text-gray-700 hover:text-orange-500" />
+            <Icon className="text-customBlueGray hover:text-orange-500" />
           </a>
         ))}
       </div>

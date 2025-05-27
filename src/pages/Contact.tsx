@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
             </div>
 
             <h1 className="text-4xl font-bold my-8">Contact Me</h1>
-            <p className="text-lg text-gray-700 mb-4">
+            <p className="text-lg text-Accent mb-4">
               I would love to hear from you!
             </p>
 

@@ -4,17 +4,17 @@ import { Footer, Nav } from "../shared/layout";
 const About: React.FC = () => {
   return (
     <>
-      <div className="w-full md:flex flex-col items-center justify-center max-w-3xl mx-auto">
+      <div className="mt-8 w-full md:flex flex-col items-center justify-center max-w-3xl mx-auto">
+        <Nav />
         <div className="px-4 mt-8">
-          <Nav />
           <h1 className="text-4xl font-bold my-6">About Me</h1>
 
           <h3 className="text-xl font-semibold mb-2">Bio</h3>
-          <div className="text-lg text-gray-700 leading-relaxed">
+          <div className="text-lg text-customBlueGray leading-relaxed">
             <p>
               I'm Elaine Muhombe, a dedicated and detail-oriented Full-Stack
               JavaScript Developer with a strong foundation in the{" "}
-              <span className="text-orange-500 font-semibold">
+              <span className="text-secondary font-semibold">
                 MERN stack (MongoDB, Express.js, React, Node.js)
               </span>
               . What makes me unique is my combination of technical expertise
@@ -46,7 +46,7 @@ const About: React.FC = () => {
               and uplift.
             </p>
 
-            <blockquote className="mt-8 italic text-gray-600 border-l-4 border-orange-500 pl-4">
+            <blockquote className="mt-8 p-4 italic text-navy bg-tealAccent pl-4 font-robotoSlab rounded-lg shadow-md">
               “Technology is most powerful when it empowers people and
               transforms communities.”
             </blockquote>
@@ -54,7 +54,7 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      {/* Footer moved outside to take full width */}
+      {/* Footer */}
       <Footer />
     </>
   );
